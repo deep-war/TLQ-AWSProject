@@ -1,0 +1,39 @@
+{
+    "callWithCLI": true,
+    "callAsync": false,
+    "memorySettings": [1024],
+    "payloads": [{
+    	"service": 1,
+        "bucketname": "termproj.562f20.edw",
+        "filename": "5000 Sales Records.csv"
+    }],
+
+    "runs": 1,
+    "threads": 1,
+    "iterations": 1,
+    "sleepTime": 5,
+    "randomSeed": 42,
+
+    "outputGroups": ["newcontainer","1_run_id"],
+    "outputRawOfGroup": ["newcontainer","1_run_id"],
+    "showAsList": ["newcontainer","1_run_id"],
+    "showAsSum": [],
+
+    "ignoreFromAll": ["zAll", "lang", "version", "linuxVersion", "platform", "hostname"],
+    "ignoreFromGroups": ["1_run_id", "2_thread_id", "cpuModel", "cpuIdle", "cpuIowait", "cpuIrq", "cpuKrn", "cpuNice", "cpuSoftIrq", "cpuUsr"],
+    "ignoreByGroup": {
+		"containerID": ["containerID"],
+		"cpuType": ["cpuType"],
+		"vmID": ["vmID"]
+    },
+    
+    "invalidators": {},
+    "removeDuplicateContainers": false,
+    "overlapFilter": "functionName",
+
+    "openCSV": true,
+    "combineSheets": true,
+    "warmupBuffer": 0
+} 
+
+
